@@ -1,0 +1,133 @@
+/* ! HEADER */
+
+.main-footer {
+    margin: 0;
+    padding: 0;
+    height: 190px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background: #fff;
+
+    &__logo {
+        grid-row: 1 / span 2;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px 50px 70px;
+        row-gap: 10px;
+        column-gap: 35px;
+    }
+
+    &__navigation {
+        grid-column: 3 / span 2;
+    }
+
+    &__navigation-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__navigation-item a {
+        font-style: italic;
+    }
+    
+    &__navigation-item:hover a {
+        color: #d34e4e;
+        border-bottom: 1px solid #d34e4e;
+    }
+    
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        column-gap: 20px;
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    &__social-item a {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__social-item a:before {
+        content: "";
+        display: block;
+        color: #fff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    &__social-item.whatsapp a:before {
+        background-image: url('/assets/img/social/WhatsApp.png');
+    }
+
+    &__social-item.whatsapp a:hover:before {
+        background-image: url('/assets/img/social/WhatsApp-hover.png');
+    }
+
+    &__social-item.instagram a:before {
+        background-image: url('/assets/img/social/Instagram.png');
+    }
+
+    &__social-item.instagram a:hover:before {
+        background-image: url('/assets/img/social/Instagram-hover.png');
+    }
+
+    &__contacts {
+        grid-row: 2 / span 2;
+        grid-column: 4;
+        padding-top: 14px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__contacts-item {
+        position: relative;
+    }
+
+    &__contacts-item:hover a {
+        color: #d34e4e;
+    }
+
+    &__contacts-item::before {
+        position: absolute;
+        top: 0;
+        left: -50px;
+        content: "";
+        display: block;
+        color: #fff;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__contacts-item.tel::before {
+        background-image: url('/assets/img/icons/tel.png');
+        width: 28px;
+        height: 29px;
+        left: -45px;
+    }
+
+    &__contacts-item.mail::before {
+        background-image: url('/assets/img/icons/mail.png');
+        width: 36px;
+        height: 23px;
+        top: 2px;
+    }
+
+    &__copyright {
+        grid-row: 3;
+        grid-column: 1;
+        font-size: 20px;
+        line-height: 20px;
+        font-style: italic;
+    }
+
+}
+

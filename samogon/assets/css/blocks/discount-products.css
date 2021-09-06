@@ -1,0 +1,129 @@
+.discount-products {
+  padding-bottom: 90px;
+  background-image: url("/assets/img/backgrounds/discount_glass.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.discount-products__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 55px;
+}
+.discount-products__wrapper {
+  position: relative;
+}
+.discount-products__slider {
+  position: relative;
+  width: 1070px;
+}
+.discount-products__item {
+  width: 340px;
+  height: 470px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 10px;
+}
+.discount-products__item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  margin: 0 auto;
+}
+.discount-products__item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  width: 225px;
+  height: 305px;
+  background-color: #d8d8dc;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.discount-products__item:hover .discount-products__item-image-container {
+  height: 259px;
+  margin-top: 0;
+}
+.discount-products__item-description {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  min-height: 40px;
+  max-height: 45px;
+  overflow: hidden;
+}
+.discount-products__price-container {
+  display: flex;
+  column-gap: 15px;
+}
+.discount-products__item-price, .discount-products__item-discount-price {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.discount-products__item-price {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+.discount-products__item-discount-price {
+  color: #cc3333;
+}
+.discount-products__item-price span, .discount-products__item-discount-price span {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: 400;
+}
+.discount-products__item-price span {
+  font-size: 18px;
+}
+.discount-products__slider-button {
+  position: absolute;
+  width: 28px;
+  height: 63px;
+  background: none;
+  cursor: pointer;
+}
+.discount-products__slider-button--button-prev {
+  background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+  top: 45%;
+  left: 115px;
+}
+.discount-products__slider-button--button-next {
+  background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+  top: 45%;
+  right: 115px;
+}
+.discount-products__slider-button--button-prev:hover {
+  background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.discount-products__slider-button--button-next:hover {
+  background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.discount-products__detail-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discount-products__catalog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px auto 0px;
+  width: 223px;
+  height: 50px;
+  border-radius: 23px;
+}
+
+/*# sourceMappingURL=discount-products.css.map */
