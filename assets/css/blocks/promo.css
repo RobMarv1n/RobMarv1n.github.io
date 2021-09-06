@@ -1,0 +1,29 @@
+.promo {
+  padding-top: 80px;
+  background-image: url("/assets/img/backgrounds/right_circle_background.png"), url("/assets/img/backgrounds/ellipse_background.png");
+  background-position: right top 40%, right 3% top 80%;
+  background-repeat: no-repeat;
+}
+.promo__container {
+  display: grid;
+  grid-template-columns: repeat(2, 585px);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 120px;
+}
+.promo__title {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 500;
+}
+.promo__description {
+  align-self: end;
+  max-height: 300px;
+  overflow: hidden;
+  line-height: 30px;
+}
+.promo__image {
+  grid-column: 2;
+  grid-row: 1/span 2;
+}
+
+/*# sourceMappingURL=promo.css.map */

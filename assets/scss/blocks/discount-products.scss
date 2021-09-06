@@ -1,0 +1,152 @@
+.discount-products {
+
+    padding-bottom: 90px;
+
+    background-image: 
+    url('/assets/img/backgrounds/discount_glass.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 55px;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__slider {
+        position: relative;
+        width: 1070px;
+    }
+
+    &__item {
+        width: 340px;
+        height: 470px;
+        background-color: rgba($color: #dcdcdc, $alpha: 0.5);
+        border-radius: 10px;
+    }
+
+    &__item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    &__item-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        width: 225px;
+        height: 305px;
+        background-color: #d8d8dc;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+
+    &__item:hover &__item-image-container {
+        height: 259px;
+        margin-top: 0;
+    }
+
+    &__item-description {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 40px;
+        max-height: 45px;
+        overflow: hidden;
+    }
+
+    &__price-container {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__item-price, &__item-discount-price {
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__item-price {
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+
+    &__item-discount-price {
+        color: #cc3333;
+    }
+
+    &__item-price span, &__item-discount-price span {
+        font-family: 'Myriad Pro', sans-serif;
+        font-size: 22px;
+        line-height: 10px;
+        font-weight: 400;
+    }   
+
+    &__item-price span {
+        font-size: 18px;
+    }
+
+    &__slider-button {
+        position: absolute;
+        width: 28px;
+        height: 63px;
+        background: none;
+        cursor: pointer;
+      }
+
+      &__slider-button--button-prev {
+        background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+        top: 45%;
+        left: 115px;
+      }
+
+      &__slider-button--button-next {
+        background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+        top: 45%;
+        right: 115px;
+      }
+
+      &__slider-button--button-prev:hover {
+        background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__slider-button--button-next:hover {
+        background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__detail-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      &__catalog-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 45px auto 0px;
+        width: 223px;
+        height: 50px;
+        border-radius: 23px;
+      }
+
+}
