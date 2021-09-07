@@ -23,6 +23,7 @@
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(2, 400px);
         column-gap: 140px;
+        align-self: center;
     }
 
     &__item {
