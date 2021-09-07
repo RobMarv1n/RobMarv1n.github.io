@@ -6,6 +6,11 @@
     color: #fff;
     min-height: 965px;
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__title {
         font-size: 60px;
         line-height: 60px;

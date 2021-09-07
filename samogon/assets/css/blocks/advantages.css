@@ -5,6 +5,10 @@
   color: #fff;
   min-height: 965px;
 }
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+}
 .advantages__title {
   font-size: 60px;
   line-height: 60px;
