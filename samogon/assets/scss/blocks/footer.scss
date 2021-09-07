@@ -65,19 +65,19 @@
     }
 
     &__social-item.whatsapp a:before {
-        background-image: url('/assets/img/social/WhatsApp.png');
+        background-image: url('assets/img/social/WhatsApp.png');
     }
 
     &__social-item.whatsapp a:hover:before {
-        background-image: url('/assets/img/social/WhatsApp-hover.png');
+        background-image: url('assets/img/social/WhatsApp-hover.png');
     }
 
     &__social-item.instagram a:before {
-        background-image: url('/assets/img/social/Instagram.png');
+        background-image: url('assets/img/social/Instagram.png');
     }
 
     &__social-item.instagram a:hover:before {
-        background-image: url('/assets/img/social/Instagram-hover.png');
+        background-image: url('assets/img/social/Instagram-hover.png');
     }
 
     &__contacts {
@@ -109,14 +109,14 @@
     }
 
     &__contacts-item.tel::before {
-        background-image: url('/assets/img/icons/tel.png');
+        background-image: url('assets/img/icons/tel.png');
         width: 28px;
         height: 29px;
         left: -45px;
     }
 
     &__contacts-item.mail::before {
-        background-image: url('/assets/img/icons/mail.png');
+        background-image: url('assets/img/icons/mail.png');
         width: 36px;
         height: 23px;
         top: 2px;

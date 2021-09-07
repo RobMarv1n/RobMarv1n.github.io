@@ -51,19 +51,19 @@
   margin: auto;
 }
 .advantages__item-image.national {
-  background-image: url("/assets/img/advantages/national.png");
+  background-image: url("assets/img/advantages/national.png");
 }
 .advantages__item-image.low-prices {
-  background-image: url("/assets/img/advantages/economical.png");
+  background-image: url("assets/img/advantages/economical.png");
 }
 .advantages__item-image.ecological {
-  background-image: url("/assets/img/advantages/ecological.png");
+  background-image: url("assets/img/advantages/ecological.png");
 }
 .advantages__item-image.fast-delivery {
-  background-image: url("/assets/img/advantages/fast_delivery.png");
+  background-image: url("assets/img/advantages/fast_delivery.png");
 }
 .advantages__item-image.large-selection {
-  background-image: url("/assets/img/advantages/large_selection.png");
+  background-image: url("assets/img/advantages/large_selection.png");
 }
 
 /*# sourceMappingURL=advantages.css.map */

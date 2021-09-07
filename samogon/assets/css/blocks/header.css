@@ -44,7 +44,7 @@
   top: 15px;
   width: 26px;
   height: 25px;
-  background-image: url("/assets/img/icons/search.png");
+  background-image: url("assets/img/icons/search.png");
   background-size: contain;
   background-position: center;
   cursor: pointer;
@@ -97,16 +97,16 @@
   width: 0px;
 }
 .main-header__social-item.whatsapp a:before {
-  background-image: url("/assets/img/social/WhatsApp.png");
+  background-image: url("assets/img/social/WhatsApp.png");
 }
 .main-header__social-item.whatsapp a:hover:before {
-  background-image: url("/assets/img/social/WhatsApp-hover.png");
+  background-image: url("assets/img/social/WhatsApp-hover.png");
 }
 .main-header__social-item.instagram a:before {
-  background-image: url("/assets/img/social/Instagram.png");
+  background-image: url("assets/img/social/Instagram.png");
 }
 .main-header__social-item.instagram a:hover:before {
-  background-image: url("/assets/img/social/Instagram-hover.png");
+  background-image: url("assets/img/social/Instagram-hover.png");
 }
 
 ul.ui-autocomplete {
@@ -216,7 +216,7 @@ a.ui-button:active,
     height: 30px;
     width: 30px;
     padding-right: 5px;
-    background-image: url("../../../assets/img/communicate.svg");
+    background-image: url("assets/img/communicate.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -271,15 +271,15 @@ a.ui-button:active,
   }
 
   .instagram-black:before {
-    background-image: url("../../../assets/img/social/instagram-black.png");
+    background-image: url("assets/img/social/instagram-black.png");
   }
 
   .tel-black:before {
-    background-image: url("../../../assets/img/social/tel-black.png");
+    background-image: url("assets/img/social/tel-black.png");
   }
 
   .e-mail-black:before {
-    background-image: url("../../../assets/img/social/e-mail-black.png");
+    background-image: url("assets/img/social/e-mail-black.png");
     background-position-y: center;
   }
 
@@ -363,7 +363,7 @@ a.ui-button:active,
     height: 50px;
     width: 50px;
     padding-right: 5px;
-    background-image: url("../../../assets/img/communicate.svg");
+    background-image: url("assets/img/communicate.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
