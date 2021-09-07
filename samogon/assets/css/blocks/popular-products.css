@@ -1,7 +1,7 @@
 .popular-products {
   padding-top: 92px;
   padding-bottom: 90px;
-  background-image: url("assets/img/backgrounds/popular_circle.png"), url("assets/img/backgrounds/popular_ellipse.png");
+  background-image: url("/samogon/assets/img/backgrounds/popular_circle.png"), url("/samogon/assets/img/backgrounds/popular_ellipse.png");
   background-position: right top -20%, right 12% top -8%;
   background-repeat: no-repeat;
 }
@@ -79,22 +79,22 @@
   cursor: pointer;
 }
 .popular-products__slider-button--button-prev {
-  background: url("assets/img/arrows/left_slider_button.png") no-repeat center;
+  background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
   top: 45%;
   left: 115px;
 }
 .popular-products__slider-button--button-next {
-  background: url("assets/img/arrows/right_slider_button.png") no-repeat center;
+  background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
   top: 45%;
   right: 115px;
 }
 .popular-products__slider-button--button-prev:hover {
-  background-image: url("assets/img/arrows/left_slider_button_hover.png");
+  background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .popular-products__slider-button--button-next:hover {
-  background-image: url("assets/img/arrows/right_slider_button_hover.png");
+  background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -115,7 +115,7 @@
 }
 
 .goods {
-  background-image: url("assets/img/backgrounds/sugar_background.png");
+  background-image: url("/samogon/assets/img/backgrounds/sugar_background.png");
   background-position: left 50%;
   background-repeat: no-repeat;
 }

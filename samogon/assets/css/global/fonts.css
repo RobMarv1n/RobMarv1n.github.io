@@ -17,21 +17,21 @@
   font-style: normal;
   font-weight: 500;
   /* font-display: swap; */
-  src: local("Gotham Pro"), url("assets/fonts/GothamPro-Medium.woff") format("woff"), url("assets/fonts/GothamPro-Medium.ttf") format("truetype");
+  src: local("Gotham Pro"), url("/samogon/assets/fonts/GothamPro-Medium.woff") format("woff"), url("/samogon/assets/fonts/GothamPro-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
   /* font-display: swap; */
-  src: local("Myriad Pro"), url("assets/fonts/GothamPro-Bold.woff") format("woff"), url("assets/fonts/GothamPro-Bold.ttf") format("truetype");
+  src: local("Myriad Pro"), url("/samogon/assets/fonts/GothamPro-Bold.woff") format("woff"), url("/samogon/assets/fonts/GothamPro-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Myriad Pro";
   font-style: normal;
   font-weight: 400;
   /* font-display: swap; */
-  src: local("Myriad Pro"), url("assets/fonts/MyriadPro-Regular.woff") format("woff"), url("assets/fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: local("Myriad Pro"), url("/samogon/assets/fonts/MyriadPro-Regular.woff") format("woff"), url("/samogon/assets/fonts/MyriadPro-Regular.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=fonts.css.map */

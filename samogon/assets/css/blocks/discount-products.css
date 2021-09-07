@@ -1,6 +1,6 @@
 .discount-products {
   padding-bottom: 90px;
-  background-image: url("assets/img/backgrounds/discount_glass.png");
+  background-image: url("/samogon/assets/img/backgrounds/discount_glass.png");
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -92,22 +92,22 @@
   cursor: pointer;
 }
 .discount-products__slider-button--button-prev {
-  background: url("assets/img/arrows/left_slider_button.png") no-repeat center;
+  background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
   top: 45%;
   left: 115px;
 }
 .discount-products__slider-button--button-next {
-  background: url("assets/img/arrows/right_slider_button.png") no-repeat center;
+  background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
   top: 45%;
   right: 115px;
 }
 .discount-products__slider-button--button-prev:hover {
-  background-image: url("assets/img/arrows/left_slider_button_hover.png");
+  background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .discount-products__slider-button--button-next:hover {
-  background-image: url("assets/img/arrows/right_slider_button_hover.png");
+  background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
   background-repeat: no-repeat;
   background-position: center;
 }

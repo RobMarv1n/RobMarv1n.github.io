@@ -55,16 +55,16 @@
   cursor: pointer;
 }
 .main-footer__social-item.whatsapp a:before {
-  background-image: url("assets/img/social/WhatsApp.png");
+  background-image: url("/samogon/assets/img/social/WhatsApp.png");
 }
 .main-footer__social-item.whatsapp a:hover:before {
-  background-image: url("assets/img/social/WhatsApp-hover.png");
+  background-image: url("/samogon/assets/img/social/WhatsApp-hover.png");
 }
 .main-footer__social-item.instagram a:before {
-  background-image: url("assets/img/social/Instagram.png");
+  background-image: url("/samogon/assets/img/social/Instagram.png");
 }
 .main-footer__social-item.instagram a:hover:before {
-  background-image: url("assets/img/social/Instagram-hover.png");
+  background-image: url("/samogon/assets/img/social/Instagram-hover.png");
 }
 .main-footer__contacts {
   grid-row: 2/span 2;
@@ -91,13 +91,13 @@
   background-repeat: no-repeat;
 }
 .main-footer__contacts-item.tel::before {
-  background-image: url("assets/img/icons/tel.png");
+  background-image: url("/samogon/assets/img/icons/tel.png");
   width: 28px;
   height: 29px;
   left: -45px;
 }
 .main-footer__contacts-item.mail::before {
-  background-image: url("assets/img/icons/mail.png");
+  background-image: url("/samogon/assets/img/icons/mail.png");
   width: 36px;
   height: 23px;
   top: 2px;
