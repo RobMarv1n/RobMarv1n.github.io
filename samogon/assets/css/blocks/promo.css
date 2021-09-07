@@ -15,6 +15,13 @@
   line-height: 70px;
   font-weight: 500;
 }
+.promo__title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: #cc3333;
+}
 .promo__description {
   align-self: end;
   max-height: 300px;

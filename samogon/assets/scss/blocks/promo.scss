@@ -23,6 +23,14 @@
         font-weight: 500;
     }
 
+    &__title::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 4px;
+        background-color: #cc3333;
+    }
+
     &__description {
         align-self: end;
         max-height: 300px;
