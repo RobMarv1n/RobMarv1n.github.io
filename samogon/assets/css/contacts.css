@@ -1,12 +1,12 @@
-@import "/assets/css/jQuery-ui/jquery-ui.min.css";
-@import "/assets/css/jQuery-ui/jquery-ui.structure.min.css";
-@import "/assets/css/jQuery-ui/jquery-ui.theme.min.css";
+@import "/samogon/assets/css/jQuery-ui/jquery-ui.min.css";
+@import "/samogon/assets/css/jQuery-ui/jquery-ui.structure.min.css";
+@import "/samogon/assets/css/jQuery-ui/jquery-ui.theme.min.css";
 @import "global/fonts.css";
 @import "global/utils.css";
 @import "blocks/header.css";
 @import "blocks/footer.css";
 .contacts__info {
-  background-image: url("/../../assets/img/contacts/apple.png"), url("/../../assets/img/contacts/wine.png");
+  background-image: url("/samogon/assets/img/contacts/apple.png"), url("/samogon/assets/img/contacts/wine.png");
   background-position: left bottom -20%, right bottom -35%;
   background-repeat: no-repeat;
 }

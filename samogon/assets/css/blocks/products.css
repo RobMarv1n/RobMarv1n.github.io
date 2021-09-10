@@ -1,7 +1,7 @@
 .products {
   padding-top: 90px;
   padding-bottom: 92px;
-  background-image: url("/assets/img/backgrounds/down_circle_background.png"), url("/assets/img/backgrounds/bottle_background.png");
+  background-image: url("/samogon/assets/img/backgrounds/down_circle_background.png"), url("/samogon/assets/img/backgrounds/bottle_background.png");
   background-position: right bottom -100%, left bottom;
   background-repeat: no-repeat;
 }

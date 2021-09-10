@@ -50,7 +50,7 @@
         top: 15px;
         width: 26px;
         height: 25px;
-        background-image: url('/assets/img/icons/search.png');
+        background-image: url('/samogon/assets/img/icons/search.png');
         background-size: contain;
         background-position: center;
         cursor: pointer;
@@ -115,19 +115,19 @@
     }
 
     &__social-item.whatsapp a:before {
-        background-image: url('/assets/img/social/WhatsApp.png');
+        background-image: url('/samogon/assets/img/social/WhatsApp.png');
     }
 
     &__social-item.whatsapp a:hover:before {
-        background-image: url('/assets/img/social/WhatsApp-hover.png');
+        background-image: url('/samogon/assets/img/social/WhatsApp-hover.png');
     }
 
     &__social-item.instagram a:before {
-        background-image: url('/assets/img/social/Instagram.png');
+        background-image: url('/samogon/assets/img/social/Instagram.png');
     }
 
     &__social-item.instagram a:hover:before {
-        background-image: url('/assets/img/social/Instagram-hover.png');
+        background-image: url('/samogon/assets/img/social/Instagram-hover.png');
     }
 
 }
