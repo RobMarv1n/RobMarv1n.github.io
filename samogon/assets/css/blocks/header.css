@@ -44,10 +44,11 @@
   top: 15px;
   width: 26px;
   height: 25px;
-  background-image: url("/samogon/assets/img/icons/search.png");
+  background-image: url("/assets/img/icons/search.png");
   background-size: contain;
   background-position: center;
   cursor: pointer;
+  background-repeat: no-repeat;
 }
 .main-header__navigation {
   grid-column: 3/span 2;
@@ -63,7 +64,7 @@
 .main-header__navigation-item a {
   font-style: italic;
 }
-.main-header__navigation-item:hover a {
+.main-header__navigation-item:hover a:not(.disabled) {
   color: #d34e4e;
   border-bottom: 1px solid #d34e4e;
 }
@@ -97,16 +98,16 @@
   width: 0px;
 }
 .main-header__social-item.whatsapp a:before {
-  background-image: url("/samogon/assets/img/social/WhatsApp.png");
+  background-image: url("/assets/img/social/WhatsApp.png");
 }
 .main-header__social-item.whatsapp a:hover:before {
-  background-image: url("/samogon/assets/img/social/WhatsApp-hover.png");
+  background-image: url("/assets/img/social/WhatsApp-hover.png");
 }
 .main-header__social-item.instagram a:before {
-  background-image: url("/samogon/assets/img/social/Instagram.png");
+  background-image: url("/assets/img/social/Instagram.png");
 }
 .main-header__social-item.instagram a:hover:before {
-  background-image: url("/samogon/assets/img/social/Instagram-hover.png");
+  background-image: url("/assets/img/social/Instagram-hover.png");
 }
 
 ul.ui-autocomplete {

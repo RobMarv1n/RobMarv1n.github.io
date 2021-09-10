@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"/>
@@ -24,16 +23,16 @@
 			<nav class="main-header__navigation">
 				<ul class="main-header__navigation-list">
 					<li class="main-header__navigation-item">
-						<a href="#">Главная</a>
+						<a class="disabled">Главная</a>
 					</li>
 					<li class="main-header__navigation-item">
-						<a href="#">Каталог</a>
+						<a href="catalog.html">Каталог</a>
 					</li>
 					<li class="main-header__navigation-item">
-						<a href="#">Преимущества</a>
+						<a class="scroll-to" href="#advantages">Преимущества</a>
 					</li>
 					<li class="main-header__navigation-item">
-						<a href="#">Контакты</a>
+						<a href="contacts.html">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -68,28 +67,28 @@
 			<ul class="products__list">
 				<li class="products__item">
 					<h3 class="products__item-title">Всё для самогона</h3>
-					<img class="products__item-img" src="assets/img/products/samogon.jpg" alt="Первосортный самогон">
+					<img class="products__item-img" src="assets/img/products/samogon.jpg">
 					<a class="products__item-button button" href="catalog.html">В каталог</a>
 				</li>
 				<li class="products__item">
 					<h3 class="products__item-title">Виноделие</h3>
-					<img class="products__item-img" src="assets/img/products/winemaking.jpg" alt="Виноделие">
+					<img class="products__item-img" src="assets/img/products/winemaking.jpg">
 					<a class="products__item-button button" href="catalog.html">В каталог</a>
 				</li>
 				<li class="products__item">
 					<h3 class="products__item-title">Приготовление пищи</h3>
-					<img class="products__item-img" src="assets/img/products/cooking.jpg" alt="Приготовление пищи">
+					<img class="products__item-img" src="assets/img/products/cooking.jpg">
 					<a class="products__item-button button" href="catalog.html">В каталог</a>
 				</li>
 				<li class="products__item">
 					<h3 class="products__item-title">Домашнее пивоварение</h3>
-					<img class="products__item-img" src="assets/img/products/beer.jpg" alt="Домашнее пивоварение">
-					<a class="products__item-button button" href="catalog.html">В каталог</a>
+					<img class="products__item-img" src="assets/img/products/beer.jpg">
+					<a class="products__item-button button" href="catalog.html#beer">В каталог</a>
 				</li>
 			</ul>
 		</div>
 		</section>
-		<section class="advantages">
+		<section class="advantages" id="advantages">
 		<div class="advantages__container container">
 			<h2 class="advantages__title">Почему <span class="red">мы</span>?</h2>
 			<ul class="advantages__list">
@@ -131,7 +130,7 @@
 							<li class="popular-products__item swiper-slide">
 								<div class="popular-products__item-container">
 									<div class="popular-products__item-image-container">
-										<img class="popular-products__item-image" src="assets/img/goods/beer_mug.png" alt="Кружка для пива 0,5л">
+										<img class="popular-products__item-image" src="/assets/img/goods/beer_mug.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="popular-products__item-description">Кружка для пива<br> 0,5 л</p>
 									<p class="popular-products__item-price">160 <span>₽</span></p>
@@ -141,8 +140,7 @@
 							<li class="popular-products__item swiper-slide">
 								<div class="popular-products__item-container">
 									<div class="popular-products__item-image-container">
-										<img class="popular-products__item-image" src="assets/img/goods/wine_set.png" alt="Винный набор 
-										Фруктовый Восторг">
+										<img class="popular-products__item-image" src="/assets/img/goods/wine_set.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="popular-products__item-description">Винный набор 
 										"Фруктовый Восторг"</p>
@@ -153,7 +151,7 @@
 							<li class="popular-products__item swiper-slide">
 								<div class="popular-products__item-container">
 									<div class="popular-products__item-image-container">
-										<img class="popular-products__item-image" src="assets/img/goods/malt.png" alt="Солод ячменный Карамельный">
+										<img class="popular-products__item-image" src="/assets/img/goods/malt.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="popular-products__item-description">Солод ячменный "Карамельный 50" 1 кг</p>
 									<p class="popular-products__item-price">80 <span>₽</span></p>
@@ -167,7 +165,7 @@
 					<button class="popular-products__slider-button popular-products__slider-button--button-next">
 					</button>
 				</div>
-				<a class="popular-products__catalog-button button" href="catalog.html">Перейти в каталог</a>
+				<a class="popular-products__catalog-button button">Перейти в каталог</a>
 			</div>
 			</section>
 			<section class="discount-products">
@@ -179,7 +177,7 @@
 							<li class="discount-products__item swiper-slide">
 								<div class="discount-products__item-container">
 									<div class="discount-products__item-image-container">
-										<img class="discount-products__item-image" src="assets/img/goods/capping_machine.png" alt="Станок укупорка для пива">
+										<img class="discount-products__item-image" src="/assets/img/goods/capping_machine.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="discount-products__item-description">Станок укупорка для пива</p>
 									<div class="discount-products__price-container">
@@ -192,7 +190,7 @@
 							<li class="discount-products__item swiper-slide">
 								<div class="discount-products__item-container">
 									<div class="discount-products__item-image-container">
-										<img class="discount-products__item-image" src="assets/img/goods/grain_set.png" alt="Зерновой набор “Аббатский Эль”">
+										<img class="discount-products__item-image" src="/assets/img/goods/grain_set.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="discount-products__item-description">Зерновой набор “Аббатский Эль”</p>
 									<div class="discount-products__price-container">
@@ -205,7 +203,7 @@
 							<li class="discount-products__item swiper-slide">
 								<div class="discount-products__item-container">
 									<div class="discount-products__item-image-container">
-										<img class="discount-products__item-image" src="assets/img/goods/lactose.png" alt="Лактоза">
+										<img class="discount-products__item-image" src="/assets/img/goods/lactose.png" alt="Кружка для пива 0,5л">
 									</div>
 									<p class="discount-products__item-description">Лактоза 1 кг</p>
 									<div class="discount-products__price-container">
@@ -222,7 +220,7 @@
 					<button class="discount-products__slider-button discount-products__slider-button--button-next">
 					</button>
 				</div>
-				<a class="discount-products__catalog-button button" href="catalog.html">Перейти в каталог</a>
+				<a class="discount-products__catalog-button button">Перейти в каталог</a>
 			</div>
 			</section>
 		</section>
@@ -272,10 +270,10 @@
 		</div>
 	</footer>
 
-	<script src="/samogon/assets/jquery/jquery-3.6.0.min.js"></script>
+	<script src="assets/jquery/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-	<script src="/samogon/assets/jquery/jquery-ui.min.js"></script>
-	<script src="/samogon/assets/jquery/script.js"></script>
+	<script src="assets/jquery/jquery-ui.min.js"></script>
+	<script src="assets/jquery/script.js"></script>
 
 </body>
 </html>

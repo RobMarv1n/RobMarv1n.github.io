@@ -1,8 +1,8 @@
 .promo {
     padding-top: 80px;
     background-image: 
-    url('/samogon/assets/img/backgrounds/right_circle_background.png'),
-    url('/samogon/assets/img/backgrounds/ellipse_background.png');
+    url('/assets/img/backgrounds/right_circle_background.png'),
+    url('/assets/img/backgrounds/ellipse_background.png');
 
     background-position: 
     right top 40%,
@@ -29,6 +29,7 @@
         width: 150px;
         height: 4px;
         background-color: #cc3333;
+        margin-top: 20px;
     }
 
     &__description {

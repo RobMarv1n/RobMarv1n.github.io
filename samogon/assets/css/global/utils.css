@@ -47,14 +47,10 @@ main, section {
   padding: 0;
 }
 
-ul {
+ul, ol, dl, dt, dd {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-ol {
-  margin: 0;
 }
 
 a {
@@ -62,6 +58,12 @@ a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #888;
 }
 
 p, blockquote, h1, h2, h3, h4 {
@@ -78,6 +80,15 @@ h1, h2, h3, h4 {
 input {
   border: none;
   padding: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 input[type=text]::-ms-clear {
@@ -119,12 +130,6 @@ button {
   background-color: #cc3333;
   border-radius: 23px;
   cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .button:hover {
@@ -137,6 +142,10 @@ button {
 }
 
 .highlight {
+  color: #cc3333;
+}
+
+a:target {
   color: #cc3333;
 }
 

@@ -1,0 +1,118 @@
+@import "/assets/css/jQuery-ui/jquery-ui.min.css";
+@import "/assets/css/jQuery-ui/jquery-ui.structure.min.css";
+@import "/assets/css/jQuery-ui/jquery-ui.theme.min.css";
+@import "global/fonts.css";
+@import "global/utils.css";
+@import "blocks/header.css";
+@import "blocks/footer.css";
+.contacts__info {
+  background-image: url("/../../assets/img/contacts/apple.png"), url("/../../assets/img/contacts/wine.png");
+  background-position: left bottom -20%, right bottom -35%;
+  background-repeat: no-repeat;
+}
+.contacts__container {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: 450px 590px;
+  grid-template-rows: 90px 600px;
+  column-gap: 145px;
+  row-gap: 30px;
+}
+.contacts__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #cc3333;
+}
+.contacts__title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: #cc3333;
+  margin-top: 15px;
+}
+.contacts__list {
+  grid-column: 1;
+  grid-row: 2;
+}
+.contacts__form {
+  grid-column: 2;
+  grid-row: 2;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.contacts__term {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #cc3333;
+}
+.contacts__definition {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contacts__form-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.contacts__input-wrapper {
+  width: 582px;
+  height: 55px;
+}
+.contacts__textarea-wrapper {
+  width: 582px;
+  height: 155px;
+}
+.contacts__input, .contacts__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 25px;
+  outline: none;
+  font-family: "Gotham Pro";
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  text-transform: capitalize;
+}
+.contacts__textarea {
+  padding-top: 20px;
+  resize: none;
+  border: none;
+}
+.contacts__input:focus, .contacts__textarea:focus {
+  background-color: white;
+  border: 2px solid #333333;
+}
+.contacts .required:invalid {
+  border: 2px solid #cc6666;
+}
+.contacts__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0px;
+  width: 200px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=contacts.css.map */
