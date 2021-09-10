@@ -6,7 +6,7 @@
 @import "blocks/header.css";
 @import "blocks/footer.css";
 .catalog {
-  background-image: url("/../../../assets/img/catalog/grape-leaves.png"), url("/../../assets/img/catalog/grape.png"), url("/../../assets/img/catalog/bumps.png"), url("/../../assets/img/catalog/cheese.png"), url("/../../assets/img/catalog/seed.png"), url("/../../assets/img/catalog/mug_of_beer.png");
+  background-image: url("/../assets/img/catalog/grape-leaves.png"), url("/../../assets/img/catalog/grape.png"), url("/../../assets/img/catalog/bumps.png"), url("/../../assets/img/catalog/cheese.png"), url("/../../assets/img/catalog/seed.png"), url("/../../assets/img/catalog/mug_of_beer.png");
   background-position: left top -6%, right top, left center, right bottom 40%, left bottom, right bottom;
   background-repeat: no-repeat;
 }
