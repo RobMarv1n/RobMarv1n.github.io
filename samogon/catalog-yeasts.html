@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/catalog-style.css">
+	<title>Главная страница сайта СамОгонь</title>
+</head>
+<body>
+    <div class="opacity-wrapper visually-hidden"></div>
+	<header class="main-header">
+		<div class="container main-header__container">
+			<a class="main-header__logo" href="index.html">
+				<img class="main-header__logo-img" src="assets/img/logo.png" width="500" height="80" alt="Логотип сайта СамОгонь">
+			</a>
+			<form class="main-header__search" action="#" method="POST">
+				<div class="ui-widget">
+					<label for="search"></label>
+					<input class="main-header__search-input" type="search" id="search" placeholder="Я ищу..." autocomplete="off">
+					<button class="main-header__submit-button" type="submit"></button>
+				</div>
+			</form>
+			<nav class="main-header__navigation">
+				<ul class="main-header__navigation-list">
+					<li class="main-header__navigation-item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="main-header__navigation-item">
+						<a class="disabled">Каталог</a>
+					</li>
+					<li class="main-header__navigation-item">
+						<a class="disabled">Преимущества</a>
+					</li>
+					<li class="main-header__navigation-item">
+						<a href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="main-header__social">
+				<li class="main-header__social-item tel">
+					<a href="tel:+7(961)854-34-72">+7(961)854-34-72</a>
+				</li>
+
+				<li class="main-header__social-item whatsapp">
+					<a href=""></a>
+				</li>
+
+				<li class="main-header__social-item instagram">
+					<a href="https://www.instagram.com/"></a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<main class="catalog">
+    <div class="catalog__container container">
+        <h1 class="catalog__title">Каталог</h1>
+        <ol class="catalog__breadcrumbs">
+            <li class="catalog__breadcrumbs-item">
+                <a href="#">Пивоварение</a>
+            </li>
+            <li class="catalog__breadcrumbs-item">
+                <a href="#">Дрожжи</a>
+            </li>
+            <li class="catalog__breadcrumbs-item">
+                <a class="disabled">Спиртовые турбо дрожжи YES! YouCan Vodka, 45 г</a>
+            </li>
+        </ol>
+        <aside class="navigation">
+            <ul class="navigation__list">
+
+                <li class="navigation__list-item moonshine-brewing">
+                    <h3 class="moonshine-brewing__title">Самогоноварение</h3>
+                    <ul class="navigation__submenu-list moonshine-brewing__list">
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Оборудование для крепкого алкоголя</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Самогонные аппараты</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Сопутствующие товары</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Комплектующие</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Ингредиенты для браги</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Измерительные приборы</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Ёмкости для брожения и хранения</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Облагораживание</a>
+                        </li>
+                        <li class="moonshine-brewing__item">
+                            <a href="#">Наборы для настаивания</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navigation__list-item winemaking">
+                    <h3 class="winemaking__title">Виноделие</h3>
+                    <ul class="navigation__submenu-list winemaking__list">
+                        <li class="winemaking__item">
+                            <a href="#">Оборудование для вина</a>
+                        </li>
+                        <li class="winemaking__item">
+                            <a href="#">Дрожжи</a>
+                        </li>
+                        <li class="winemaking__item">
+                            <a href="#">Ферменты</a>
+                        </li>
+                        <li class="winemaking__item">
+                            <a href="#">Ёмкости для брожения и хранения</a>
+                        </li>
+                        <li class="winemaking__item">
+                            <a href="#">Концентрированные соки</a>
+                        </li>
+                        <li class="winemaking__item">
+                            <a href="#">Наборы</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="navigation__list-item brewing">
+                    <h3 class="brewing__title">Пивоварение</h3>
+                    <ul class="navigation__submenu-list brewing__list">
+                        <li class="brewing__item">
+                            <a href="catalog.html#beer" id="beer">Оборудование для пивоварения</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a class="disabled" href="catalog-yeasts.html#yeasts" id="yeasts">Дрожжи</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Солод</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Хмель</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Солодовые экстракты</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Зерновые наборы</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Ёмкости для брожения и хранения</a>
+                        </li>
+                        <li class="brewing__item">
+                            <a href="#">Сидр, медовуха, квас</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navigation__list-item cooking">
+                    <h3 class="cooking__title">Приготовление пищи</h3>
+                    <ul class="navigation__submenu-list cooking__list">
+                        <li class="cooking__item">
+                            <a href="#">Коптильни</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Сушилки</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Приготовление сыра</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Колбасное оборудование</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Консервация</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Ингредиенты</a>
+                        </li>
+                        <li class="cooking__item">
+                            <a href="#">Грили, мангалы</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navigation__list-item calculator-nav">
+                    <h3 class="calculator__title">Калькулятор</h3>
+                    <ul class="navigation__submenu-list calculator__list">
+                        <li class="calculator__item">
+                            <a class="calculator__link"  href="calculator.html#calculator" id="calculator">Самогонщика</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <section class="products">
+            <h2 class="products__title">Спиртовые турбо дрожжи YES! YouCan Vodka, 45 г</h2>
+            <div class="card">
+                <div class="card__slider">
+                    <div class="card__main-img">
+                        <ul class="card__list swiper-wrapper">
+
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                            </li>
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                            </li>
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/seed.png" alt="Дрожжи">
+                            </li>
+        
+                        </ul>
+                    </div>
+
+                    <div class="card__thumbnails-slide">
+                        <ul class="card__thumbnails-list swiper-wrapper" thumbsSlider="">
+
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                            </li>
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                            </li>
+                            <li class="card__item swiper-slide">
+                                <img class="card__item-image" src="assets/img/catalog/seed.png" alt="Дрожжи">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <dl class="card__description">
+                    <dt class="card__term"></dt>
+                    <dd class="card__definition">Дрожжи предназначены для приготовления водки на основе сахарной браги. Чистая культура дрожжей не выделяет вредных примесей в процессе ферментации, что позволяет получить чистый напиток без резкого запаха. Пачка весом 45 граммов рассчитана на 6-8 килограммов сахара.</dd>
+
+                    <dt class="card__term">Инструкция по применению:</dt>
+                    <dd class="card__definition">Растворите необходимое количество сахара в воде, нагретой до 37°С, доведите объем сиропа до 25 литров воды. Введите дрожжи в сироп, когда его температура опустится до 25°С. Перемешайте до полного растворения.</dd>
+                </dl>
+                <div class="card__price-wrapper">
+                    <p class="card__price">Стоимость: 110 ₽</p>
+                    <button class="card__price-button button">купить</button>
+                </div>
+            </div>
+
+            <div class="recently-viewed">
+                <h2 class="recently-viewed__title"><span class="red">Недавно</span> просмотренные</h2>
+                <div class="recently-viewed__wrapper">
+                    <div class="recently-viewed__slider swiper-container">
+                        <ul class="recently-viewed__list swiper-wrapper">
+                            <li class="recently-viewed__item swiper-slide">
+                                <div class="recently-viewed__item-container">
+                                    <div class="recently-viewed__item-image-container">
+                                        <img class="recently-viewed__item-image" src="assets/img/goods/capping_machine.png" alt="Кружка для пива 0,5л">
+                                    </div>
+                                    <p class="recently-viewed__item-description">Станок укупорка для пива</p>
+                                    <div class="recently-viewed__price-container">
+                                        <p class="recently-viewed__item-price">2195 <span>₽</span></p>
+                                        <p class="recently-viewed__item-discount-price visually-hidden">1980 <span>₽</span></p>
+                                    </div>
+                                    <a class="recently-viewed__detail-button button" href="#">подробнее</a>
+                                </div>
+                            </li>
+                            <li class="recently-viewed__item swiper-slide">
+                                <div class="recently-viewed__item-container">
+                                    <div class="recently-viewed__item-image-container">
+                                        <img class="recently-viewed__item-image" src="assets/img/goods/grain_set.png" alt="Кружка для пива 0,5л">
+                                    </div>
+                                    <p class="recently-viewed__item-description">Зерновой набор “Аббатский Эль”</p>
+                                    <div class="recently-viewed__price-container">
+                                        <p class="recently-viewed__item-price">1 605 <span>₽</span></p>
+                                        <p class="recently-viewed__item-discount-price visually-hidden">1 200 <span>₽</span></p>
+                                    </div>
+                                    <a class="recently-viewed__detail-button button" href="#">подробнее</a>
+                                </div>
+                            </li>
+                            <li class="recently-viewed__item swiper-slide">
+                                <div class="recently-viewed__item-container">
+                                    <div class="recently-viewed__item-image-container">
+                                        <img class="recently-viewed__item-image" src="assets/img/goods/lactose.png" alt="Кружка для пива 0,5л">
+                                    </div>
+                                    <p class="recently-viewed__item-description">Лактоза 1 кг</p>
+                                    <div class="recently-viewed__price-container">
+                                        <p class="recently-viewed__item-price">210 <span>₽</span></p>
+                                        <p class="recently-viewed__item-discount-price visually-hidden">160 <span>₽</span></p>
+                                    </div>
+                                    <a class="recently-viewed__detail-button button" href="#">подробнее</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="recently-viewed__slider-button recently-viewed__slider-button--button-prev">
+                    </button>
+                    <button class="recently-viewed__slider-button recently-viewed__slider-button--button-next">
+                    </button>
+                </div>
+            </div>
+
+            <div class="products__modal visually-hidden">
+                <div class="products__modal-slider swiper-container">
+                    <ul class="products__modal-list swiper-wrapper">
+
+                        <li class="products__modal-item swiper-slide">
+                            <img class="products__modal-item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                        </li>
+                        <li class="products__modal-item swiper-slide">
+                            <img class="products__modal-item-image" src="assets/img/catalog/card/main_img.png" alt="Дрожжи">
+                        </li>
+                        <li class="products__modal-item swiper-slide">
+                            <img class="products__modal-item-image" src="assets/img/catalog/seed.png" alt="Дрожжи">
+                        </li>
+    
+                    </ul>
+                </div>
+                <button class="products__modal-slider-button products__modal-slider-button--button-prev">
+                </button>
+                <button class="products__modal-slider-button products__modal-slider-button--button-next">
+                </button>
+                <button class="products__modal-close-button"></button>
+            </div>
+        </section>
+    </div>
+    </main>       
+
+	<footer class="main-footer">
+		<div class="main-footer__container container">
+			<a class="main-footer__logo" href="index.html">
+				<img class="main-footer__logo-img" src="assets/img/logo.png" width="500" height="80" alt="Логотип сайта СамОгонь">
+			</a>
+			<nav class="main-footer__navigation">
+				<ul class="main-footer__navigation-list">
+					<li class="main-footer__navigation-item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="main-footer__navigation-item">
+						<a href="#">Каталог</a>
+					</li>
+					<li class="main-footer__navigation-item">
+						<a href="#">Преимущества</a>
+					</li>
+					<li class="main-footer__navigation-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="main-footer__social">
+				
+
+				<li class="main-footer__social-item whatsapp">
+					<a href=""></a>
+				</li>
+
+				<li class="main-footer__social-item instagram">
+					<a href="https://www.instagram.com/"></a>
+				</li>
+			</ul>
+			<ul class="main-footer__contacts">
+				<li class="main-footer__contacts-item tel">
+					<a href="tel:+7(961)854-34-72">+7(961)854-34-72</a>
+				</li>
+				<li class="main-footer__contacts-item mail">
+					<a href="mailto:sam0goni@yandex.ru">sam0goni@yandex.ru</a>
+				</li>
+			</ul>
+			<p class="main-footer__copyright">2020 © “Самогонъ” - интернет-магазин для настоящих ценителей.<br>Все права защищены.</p>
+		</div>
+	</footer>
+
+	<script src="assets/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="assets/jquery/jquery-ui.min.js"></script>
+	<script src="assets/jquery/script.js"></script>
+
+</body>
+</html>

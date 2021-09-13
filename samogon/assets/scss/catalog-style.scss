@@ -352,3 +352,306 @@
     }
 
 }
+
+.card {
+
+    font-family: 'Gotham Pro';
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px 640px;
+    grid-template-rows: 300px 90px;
+
+    column-gap: 30px;
+    row-gap: 15px;
+
+    &__slider {
+        width: 300px;
+        height: 415px;
+        overflow: hidden;
+
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+    
+    &__list {
+        height: 300px;
+
+        .swiper-slide-active:hover img {
+            filter: brightness(0.5) opacity(0.6);
+            cursor: pointer;
+        }
+    }
+
+    &__thumbnails-list {
+        padding-top: 15px;
+        width: 300px;
+        height: 90px;
+
+        .swiper-slide {
+            width: 90px !important;
+            height: 90px !important;
+        }
+
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    &__term {
+        font-weight: 500;
+    }
+
+    &__definition {
+        padding-bottom: 35px;
+    }
+
+    &__price-wrapper {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    &__price {
+        padding-bottom: 18px;
+    }
+
+    &__price-button {
+        width: 170px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 8px;
+    }
+}
+
+.recently-viewed {
+
+    margin-top: 100px;
+
+    &__title {
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__slider {
+        position: relative;
+        width: 934px;
+        overflow: hidden;
+    }
+
+    &__item {
+        width: 297px;
+        height: 410px;
+        background-color: rgba($color: #dcdcdc, $alpha: 0.5);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    &__item-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        width: 205px;
+        height: 275px;
+        background-color: #d8d8dc;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+
+    &__item:hover &__item-image-container{
+        height: 235px;
+        margin-top: 0;
+    }
+
+    &__item-description {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 35px;
+        max-height: 45px;
+        overflow: hidden;
+    }
+
+    &__item-price {
+        font-size: 18px;  
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__item-price span {
+        font-family: 'Myriad Pro';
+        font-size: 22px;
+        line-height: 10px;
+        font-weight: 400;
+    }
+
+    &__slider-button {
+        position: absolute;
+        width: 28px;
+        height: 63px;
+        background: none;
+        cursor: pointer;
+      }
+
+    &__slider-button--button-prev {
+        background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
+        top: 45%;
+        left: -45px;
+    }
+
+    &__slider-button--button-next {
+        background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
+        top: 45%;
+        right: 5px;
+    }
+
+    &__slider-button--button-prev:hover {
+        background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__slider-button--button-next:hover {
+        background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__detail-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        transition: all 1s ease;
+    }
+      
+    &__item:hover &__detail-button {
+        margin-top: 5px;
+    }
+
+}
+
+// ! MODAL
+
+.products {
+
+    &__modal {
+        position: absolute;
+        width: 840px;
+        height: 640px;
+        top: 40%;
+        left: 30%;
+        z-index: 2;
+    }
+
+    &__modal-container {
+        width: 840px;
+        height: 640px;
+        
+    }
+
+    .swiper-container {
+        overflow: hidden !important;
+    }
+
+    &__modal-list {
+        width: 840px;
+        height: 640px;
+    }
+
+    &__modal-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__modal-item-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__modal-slider-button {
+        position: absolute;
+        width: 28px;
+        height: 63px;
+        background: none;
+        cursor: pointer;
+      }
+
+    &__modal-slider-button--button-prev {
+        background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
+        top: 45%;
+        left: -20%;
+    }
+
+    &__modal-slider-button--button-next {
+        background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
+        top: 45%;
+        right: -20%;
+    }
+
+    &__modal-slider-button--button-prev:hover {
+        background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__modal-slider-button--button-next:hover {
+        background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__modal-close-button {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        background-image: url("/samogon/assets/img/catalog/card/close.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 4;
+    }
+
+    &__modal-close-button:hover {
+        background-image: url("/samogon/assets/img/catalog/card/close_hover.png");
+    }
+
+}
+

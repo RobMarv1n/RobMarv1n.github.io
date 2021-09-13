@@ -289,4 +289,251 @@
   color: #cc3333;
 }
 
+.card {
+  font-family: "Gotham Pro";
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 300px 640px;
+  grid-template-rows: 300px 90px;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+.card__slider {
+  width: 300px;
+  height: 415px;
+  overflow: hidden;
+  grid-row: 1/span 2;
+  grid-column: 1;
+}
+.card__list {
+  height: 300px;
+}
+.card__list .swiper-slide-active:hover img {
+  filter: brightness(0.5) opacity(0.6);
+  cursor: pointer;
+}
+.card__thumbnails-list {
+  padding-top: 15px;
+  width: 300px;
+  height: 90px;
+}
+.card__thumbnails-list .swiper-slide {
+  width: 90px !important;
+  height: 90px !important;
+}
+.card .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__description {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  grid-row: 1;
+  grid-column: 2;
+}
+.card__term {
+  font-weight: 500;
+}
+.card__definition {
+  padding-bottom: 35px;
+}
+.card__price-wrapper {
+  grid-row: 2;
+  grid-column: 2;
+}
+.card__price {
+  padding-bottom: 18px;
+}
+.card__price-button {
+  width: 170px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.recently-viewed {
+  margin-top: 100px;
+}
+.recently-viewed__title {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.recently-viewed__wrapper {
+  position: relative;
+}
+.recently-viewed__slider {
+  position: relative;
+  width: 934px;
+  overflow: hidden;
+}
+.recently-viewed__item {
+  width: 297px;
+  height: 410px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.recently-viewed__item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  margin: 0 auto;
+}
+.recently-viewed__item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 205px;
+  height: 275px;
+  background-color: #d8d8dc;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.recently-viewed__item:hover .recently-viewed__item-image-container {
+  height: 235px;
+  margin-top: 0;
+}
+.recently-viewed__item-description {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  min-height: 35px;
+  max-height: 45px;
+  overflow: hidden;
+}
+.recently-viewed__item-price {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.recently-viewed__item-price span {
+  font-family: "Myriad Pro";
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: 400;
+}
+.recently-viewed__slider-button {
+  position: absolute;
+  width: 28px;
+  height: 63px;
+  background: none;
+  cursor: pointer;
+}
+.recently-viewed__slider-button--button-prev {
+  background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
+  top: 45%;
+  left: -45px;
+}
+.recently-viewed__slider-button--button-next {
+  background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
+  top: 45%;
+  right: 5px;
+}
+.recently-viewed__slider-button--button-prev:hover {
+  background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recently-viewed__slider-button--button-next:hover {
+  background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recently-viewed__detail-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  transition: all 1s ease;
+}
+.recently-viewed__item:hover .recently-viewed__detail-button {
+  margin-top: 5px;
+}
+
+.products__modal {
+  position: absolute;
+  width: 840px;
+  height: 640px;
+  top: 40%;
+  left: 30%;
+  z-index: 2;
+}
+.products__modal-container {
+  width: 840px;
+  height: 640px;
+}
+.products .swiper-container {
+  overflow: hidden !important;
+}
+.products__modal-list {
+  width: 840px;
+  height: 640px;
+}
+.products__modal-item {
+  width: 100%;
+  height: 100%;
+}
+.products__modal-item-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.products__modal-slider-button {
+  position: absolute;
+  width: 28px;
+  height: 63px;
+  background: none;
+  cursor: pointer;
+}
+.products__modal-slider-button--button-prev {
+  background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
+  top: 45%;
+  left: -20%;
+}
+.products__modal-slider-button--button-next {
+  background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
+  top: 45%;
+  right: -20%;
+}
+.products__modal-slider-button--button-prev:hover {
+  background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.products__modal-slider-button--button-next:hover {
+  background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.products__modal-close-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  background-image: url("/samogon/assets/img/catalog/card/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 4;
+}
+.products__modal-close-button:hover {
+  background-image: url("/samogon/assets/img/catalog/card/close_hover.png");
+}
+
 /*# sourceMappingURL=catalog-style.css.map */
