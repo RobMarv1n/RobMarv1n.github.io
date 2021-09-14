@@ -154,11 +154,15 @@ ul.ui-autocomplete li {
     align-items: center;
 }
 
-ul.ui-autocomplete li div {
+ul.ui-autocomplete li a {
     width: 322px;
-    height: 32px;
+    height: 100%;
     display: flex;
     align-items: center;
+}
+
+ul.ui-autocomplete li:first-child a {
+    border-radius: 10px 10px 0px 0px !important;
 }
 
 ul.ui-autocomplete li:first-child div {
