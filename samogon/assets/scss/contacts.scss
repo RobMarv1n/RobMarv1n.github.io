@@ -145,4 +145,109 @@
 
 }
 
+// ! ADAPTIVE FOR IPAD
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1300px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .contacts {
+
+        &__info {
+            background-position:
+            left bottom -20%,
+            right bottom -6%;
+        }
+    
+        &__container {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            grid-template-columns: 700px;
+            grid-template-rows: auto;
+            column-gap: 0;
+            row-gap: 30px;
+        }
+    
+        &__list {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        &__form {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        &__map img {
+            object-fit: cover;
+        }
+    
+    }
+
+}
+
+// ! ADAPTIVE FOR IPHONE
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+
+
+    .contacts {
+
+        &__title {
+            font-size: 50px;
+        }
+
+        &__info {
+
+            background: none;
+            background-image: 
+            url('/../../assets/img/contacts/apple.png');
+            background-repeat: no-repeat;
+            background-position: 
+            left bottom -20%;
+
+        }
+    
+        &__container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            column-gap: 0;
+            row-gap: 30px;
+        }
+    
+        &__list {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        &__form {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        &__input-wrapper {
+            width: 300px;
+            height: 55px;
+        }
+
+        &__textarea-wrapper {
+            width: 300px;
+        }
+
+        &__button {
+            margin-top: 0;
+        }
+
+        &__map img {
+            object-fit: cover;
+        }
+    
+    }
+
+}
 

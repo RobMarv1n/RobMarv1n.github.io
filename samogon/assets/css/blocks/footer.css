@@ -109,4 +109,115 @@
   font-style: italic;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-footer {
+    height: 450px;
+    width: 100%;
+  }
+  .main-footer__logo {
+    justify-self: center;
+    width: 630px;
+    grid-row: initial;
+  }
+  .main-footer__logo img {
+    width: 100%;
+  }
+  .main-footer__container {
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 100px repeat(3, 60px) 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+  .main-footer__navigation {
+    grid-column: initial;
+    grid-row: 2;
+  }
+  .main-footer__navigation-list {
+    justify-content: space-around;
+  }
+  .main-footer__social {
+    margin-top: 15px;
+    grid-column: initial;
+    grid-row: 3;
+    justify-self: center;
+  }
+  .main-footer__contacts {
+    grid-row: 4;
+    grid-column: 1;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 80px;
+  }
+  .main-footer__copyright {
+    grid-row: 5;
+    grid-column: 1;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .main-footer {
+    padding-top: 10px;
+    height: 400px;
+    width: 100%;
+  }
+  .main-footer__logo {
+    padding-top: 15px;
+    justify-self: center;
+    width: 300px;
+    grid-row: initial;
+    object-fit: contain;
+  }
+  .main-footer__logo img {
+    width: 100%;
+  }
+  .main-footer__container {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px repeat(4, 50px) 90px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+  .main-footer__navigation {
+    display: grid;
+    justify-content: center;
+    grid-column: initial;
+    grid-row: 2;
+  }
+  .main-footer__navigation-list {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 30px 30px;
+    column-gap: 50px;
+  }
+  .main-footer__navigation-list {
+    justify-content: space-around;
+  }
+  .main-footer__social {
+    margin-top: 15px;
+    grid-column: initial;
+    grid-row: 5;
+    justify-self: center;
+    align-items: start;
+    margin: 0;
+  }
+  .main-footer__contacts {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    grid-row: 3/span 2;
+    grid-column: 1;
+    padding-left: 70px;
+    padding-top: 0;
+  }
+  .main-footer__copyright {
+    font-size: 16px;
+    grid-row: 6;
+    grid-column: 1;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

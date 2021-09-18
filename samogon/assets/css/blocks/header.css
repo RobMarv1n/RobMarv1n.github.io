@@ -170,4 +170,94 @@ a.ui-button:active,
   color: black !important;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-header {
+    height: 350px;
+    width: 100%;
+  }
+  .main-header__logo {
+    justify-self: center;
+    width: 630px;
+    grid-row: initial;
+  }
+  .main-header__logo img {
+    width: 100%;
+  }
+  .main-header__container {
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 100px repeat(3, 60px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+  .main-header__navigation {
+    grid-column: initial;
+    grid-row: 2;
+  }
+  .main-header__social {
+    margin-top: 15px;
+    grid-column: initial;
+    grid-row: 4;
+    justify-self: center;
+  }
+  .main-header__search {
+    justify-self: center;
+    grid-row: 3;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .main-header {
+    padding-top: 10px;
+    height: 350px;
+    width: 100%;
+  }
+  .main-header__logo {
+    padding-top: 15px;
+    justify-self: center;
+    width: 300px;
+    grid-row: initial;
+    object-fit: contain;
+  }
+  .main-header__logo img {
+    width: 100%;
+  }
+  .main-header__container {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px repeat(3, 60px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+  .main-header__navigation {
+    display: grid;
+    justify-content: center;
+    grid-column: initial;
+    grid-row: 2;
+  }
+  .main-header__navigation-list {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 30px 30px;
+    column-gap: 50px;
+  }
+  .main-header__social {
+    margin-top: 15px;
+    grid-column: initial;
+    grid-row: 4;
+    justify-self: center;
+  }
+  .main-header__search {
+    justify-self: center;
+    grid-row: 3;
+    width: 280px;
+  }
+  .main-header__search-input {
+    width: 280px !important;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

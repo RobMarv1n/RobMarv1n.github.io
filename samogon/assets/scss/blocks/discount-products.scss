@@ -150,3 +150,93 @@
       }
 
 }
+
+// ! ADAPTIVE FOR IPAD
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1300px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .discount-products {
+
+        &__slider {
+            position: relative;
+            width: 610px;
+        }
+  
+        &__item.swiper-slide {
+            width: auto;
+            height: 470px;
+            text-align: center;
+        }
+  
+        &__slider-button--button-prev {
+          top: 45%;
+          left: -15px;
+        }
+  
+        &__slider-button--button-next {
+          top: 45%;
+          right: -15px;
+        }
+
+  }
+
+}
+
+// ! ADAPTIVE FOR IPHONE
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+
+  .discount-products {
+
+    &__title {
+        font-size: 40px;
+      }  
+
+    &__slider {
+        position: relative;
+        width: 240px;
+    }
+
+    &__item.swiper-slide {
+        width: auto;
+        height: 410px;
+        text-align: center;
+    }
+
+    &__item-image-container {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+
+    &__item:hover &__item-image-container{
+      height: 200px;
+      margin-top: 20px;
+    }
+
+    &__item-price {
+      line-height: 1.2;
+    }
+
+    &__item-discount-price {
+        line-height: 1.2;
+    }
+
+    &__slider-button--button-prev {
+      top: 45%;
+      left: -5px;
+    }
+
+    &__slider-button--button-next {
+      top: 45%;
+      right: -5px;
+    }
+
+  }
+
+}

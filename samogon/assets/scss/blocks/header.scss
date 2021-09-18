@@ -191,3 +191,123 @@ a.ui-button:active,
 	background: #cccccc;
     color: black !important;
 }
+
+// ! ADAPTIVE FOR IPAD
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1300px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .main-header {
+        height: 350px;
+        width: 100%;
+  
+        &__logo {
+            justify-self: center;
+            width: 630px;   
+            grid-row: initial;    
+        }
+
+        &__logo img {
+            width: 100%;       
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 700px;
+            grid-template-rows: 100px repeat(3, 60px);
+            justify-content: center;
+            align-items: center;
+            column-gap: 0;
+            row-gap: 10px;
+        }
+
+        &__navigation {
+            grid-column: initial;
+            grid-row: 2;
+        }
+    
+        &__social {
+            margin-top: 15px;
+            grid-column: initial;
+            grid-row: 4;
+            justify-self: center;
+        }
+
+        &__search {
+            justify-self: center;
+            grid-row: 3;
+        }
+
+    }
+
+}
+
+ // ! ADAPTIVE FOR IPHONE
+
+ @media only screen 
+ and (min-device-width : 320px) 
+ and (max-device-width : 767px) {
+
+    .main-header {
+        padding-top: 10px;
+        height: 350px;
+        width: 100%;
+  
+        &__logo {
+            padding-top: 15px;
+            justify-self: center;
+            width: 300px;   
+            grid-row: initial;
+            object-fit: contain;    
+        }
+
+        &__logo img {
+            width: 100%;       
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 100px repeat(3, 60px);
+            justify-content: center;
+            align-items: center;
+            column-gap: 0;
+            row-gap: 10px;
+        }
+
+        &__navigation {
+            display: grid;
+            justify-content: center;
+            grid-column: initial;
+            grid-row: 2;
+        }
+
+        &__navigation-list {
+            display: grid;
+            grid-template-columns: 120px 120px;
+            grid-template-rows: 30px 30px;
+            column-gap: 50px;
+        }
+    
+        &__social {
+            margin-top: 15px;
+            grid-column: initial;
+            grid-row: 4;
+            justify-self: center;
+        }
+
+        &__search {
+            justify-self: center;
+            grid-row: 3;
+            width: 280px;
+        }
+
+        &__search-input {
+            width: 280px !important;
+        }
+
+    }
+
+ }

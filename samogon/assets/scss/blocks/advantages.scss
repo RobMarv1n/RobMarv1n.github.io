@@ -84,3 +84,85 @@
     }
 
 }
+
+// ! ADAPTIVE FOR IPAD
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1300px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .advantages {
+        height: 1300px;
+    
+        &__title {
+            padding-bottom: 50px;
+        }
+    
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: initial;
+            column-gap: 140px;
+            row-gap: 40px;
+        }
+    
+        &__item--low-prices {
+            grid-row: 2;
+            grid-column: 1 / span 2;
+        }
+    
+    }
+
+}
+
+// ! ADAPTIVE FOR IPHONE
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+
+    .advantages {
+
+        padding-top: 30px;
+        min-height: 2000px;
+    
+        &__title {
+            padding-bottom: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
+    
+        &__list {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: initial;
+            column-gap: 140px;
+            row-gap: 40px;
+        }
+
+        &__item {
+            grid-column: initial;
+        }
+    
+        &__item--low-prices {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    
+        &__item-image {
+            padding-top: 25px;
+            padding-bottom: 50px;
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            justify-self: center;
+            text-align: center;
+            margin: auto;
+        }
+    
+    }
+
+}

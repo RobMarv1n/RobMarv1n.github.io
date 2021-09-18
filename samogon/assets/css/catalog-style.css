@@ -536,4 +536,595 @@
   background-image: url("/samogon/assets/img/catalog/card/close_hover.png");
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
+  .catalog {
+    padding-top: 50px;
+  }
+  .catalog .catalog__container {
+    grid-template-columns: 260px 510px;
+    grid-template-rows: 125px 30px auto;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding-bottom: 200px;
+  }
+  .catalog__breadcrumbs {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    z-index: 15;
+  }
+
+  .navigation {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .navigation__list {
+    display: none;
+    z-index: 5;
+    background-color: white;
+    width: 500px;
+    padding-left: 40px;
+  }
+  .navigation__list-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 45px;
+  }
+  .navigation__submenu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    font-family: "Gotham Pro";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .navigation__submenu-list li:hover a:not(.disabled) {
+    color: #dcdcdc;
+  }
+
+  .products {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+  .products__slider {
+    width: 770px;
+  }
+
+  .navigation-modal__open-button {
+    position: absolute;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/buttons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navigation-modal__close-button {
+    position: absolute;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/buttons/close.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    font-family: "Gotham Pro";
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px 460px;
+    grid-template-rows: 300px 90px;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+  .card__slider {
+    width: 300px;
+    height: 415px;
+    overflow: hidden;
+    grid-row: 1/span 2;
+    grid-column: 1;
+  }
+  .card__list {
+    height: 300px;
+  }
+  .card__description {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .card__price-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .card__price {
+    padding-bottom: 0;
+  }
+  .card__price-button {
+    order: 1;
+  }
+
+  .recently-viewed__wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .recently-viewed__slider {
+    width: 600px;
+  }
+  .recently-viewed__item {
+    width: auto;
+  }
+  .recently-viewed__slider-button--button-prev {
+    left: -45px;
+  }
+  .recently-viewed__slider-button--button-next {
+    right: -45px;
+  }
+
+  .products__modal {
+    width: 640px;
+    height: 640px;
+    top: 30%;
+    left: 20%;
+  }
+  .products__modal-container {
+    width: 840px;
+    height: 640px;
+  }
+  .products .swiper-container {
+    overflow: hidden !important;
+  }
+  .products__modal-list {
+    width: 840px;
+    height: 640px;
+  }
+  .products__modal-item {
+    width: 100%;
+    height: 100%;
+  }
+  .products__modal-item-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .products__modal-slider-button {
+    position: absolute;
+    width: 28px;
+    height: 63px;
+    background: none;
+    cursor: pointer;
+  }
+  .products__modal-slider-button--button-prev {
+    background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+    top: 45%;
+    left: -20%;
+  }
+  .products__modal-slider-button--button-next {
+    background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+    top: 45%;
+    right: -20%;
+  }
+  .products__modal-slider-button--button-prev:hover {
+    background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .products__modal-slider-button--button-next:hover {
+    background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .products__modal-close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/card/close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+  }
+  .products__modal-close-button:hover {
+    background-image: url("/assets/img/catalog/card/close_hover.png");
+  }
+
+  .calculator {
+    font-family: "Gotham Pro";
+    margin-top: 60px;
+    display: flex;
+    column-gap: 40px;
+  }
+  .calculator__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 420px;
+  }
+  .calculator__input-wrapper {
+    display: grid;
+    grid-template-columns: 225px 138px 1fr;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 37px;
+  }
+  .calculator__label {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .calculator__input {
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 125px;
+    height: 37px;
+    background-color: #dcdcdc;
+    font-size: 16px;
+  }
+  .calculator__input:focus {
+    background-color: #fff;
+    border: 1px solid #333333;
+  }
+  .calculator__input-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .calculator__img {
+    width: 100%;
+    height: 108px;
+    background-image: url("/assets/img/catalog/calculator/flask.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  .calculator .decided {
+    background-image: url("/assets/img/catalog/calculator/flask_red.png");
+  }
+  .calculator__help {
+    text-align: center;
+  }
+  .calculator__help span {
+    color: #cc3333;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .catalog {
+    padding-top: 30px;
+    background: none;
+    background-image: url("/../../assets/img/catalog/grape-leaves.png");
+    background-repeat: no-repeat;
+    background-position: left 10% top -9%;
+  }
+  .catalog__title {
+    text-align: center;
+  }
+  .catalog__title:after {
+    margin-left: 30px;
+  }
+  .catalog .catalog__container {
+    grid-template-columns: 300px;
+    grid-template-rows: 100px auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding-bottom: 30px;
+  }
+  .catalog__breadcrumbs {
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 15;
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    position: relative;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .navigation__list {
+    display: none;
+    z-index: 5;
+    background-color: white;
+    width: 300px;
+    padding-left: 20px;
+  }
+  .navigation__list-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 45px;
+  }
+  .navigation__submenu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    font-family: "Gotham Pro";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .navigation__submenu-list li:hover a:not(.disabled) {
+    color: #dcdcdc;
+  }
+
+  .products {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .products__slider {
+    width: 300px;
+  }
+  .products__list {
+    row-gap: 0px !important;
+  }
+  .products__item {
+    min-height: 450px;
+  }
+  .products__item-image-container {
+    margin-top: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  .products__item:hover .products__item-image-container {
+    margin-top: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  .products__price-container {
+    line-height: 1.2;
+  }
+  .products__item-price {
+    margin: 0;
+  }
+  .products__detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    transition: all 1s ease;
+  }
+  .products__item:hover .products__detail-button {
+    margin-top: 20px;
+  }
+
+  .navigation-modal__open-button {
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/buttons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navigation-modal__close-button {
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/buttons/close.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    font-family: "Gotham Pro";
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: initial;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+  .card__slider {
+    width: 300px;
+    height: 415px;
+    overflow: hidden;
+    grid-row: 1/span 2;
+    grid-column: 1;
+  }
+  .card__list {
+    height: 300px;
+  }
+  .card__main-img .swiper-slide-active {
+    pointer-events: none;
+  }
+  .card__description {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .card__definition {
+    padding-bottom: 25px;
+  }
+  .card__definition:last-child {
+    padding-bottom: 0;
+  }
+  .card__price-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .card__price {
+    padding-bottom: 0;
+  }
+  .card__price-button {
+    order: 1;
+  }
+
+  .recently-viewed {
+    margin-top: 40px;
+  }
+  .recently-viewed__wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .recently-viewed__slider {
+    width: 300px;
+  }
+  .recently-viewed__item {
+    min-height: 450px;
+  }
+  .recently-viewed__item-description {
+    margin-bottom: 20px;
+  }
+  .recently-viewed__item-image-container {
+    margin-top: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  .recently-viewed__item:hover .recently-viewed__item-image-container {
+    margin-top: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  .recently-viewed__slider-button--button-prev {
+    left: -45px;
+  }
+  .recently-viewed__slider-button--button-next {
+    right: -45px;
+  }
+  .recently-viewed__detail-button {
+    margin: 0;
+  }
+
+  .products__modal {
+    width: 640px;
+    height: 640px;
+    top: 30%;
+    left: 20%;
+  }
+  .products__modal-container {
+    width: 840px;
+    height: 640px;
+  }
+  .products .swiper-container {
+    overflow: hidden !important;
+  }
+  .products__modal-list {
+    width: 840px;
+    height: 640px;
+  }
+  .products__modal-item {
+    width: 100%;
+    height: 100%;
+  }
+  .products__modal-item-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .products__modal-slider-button {
+    position: absolute;
+    width: 28px;
+    height: 63px;
+    background: none;
+    cursor: pointer;
+  }
+  .products__modal-slider-button--button-prev {
+    background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+    top: 45%;
+    left: -20%;
+  }
+  .products__modal-slider-button--button-next {
+    background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+    top: 45%;
+    right: -20%;
+  }
+  .products__modal-slider-button--button-prev:hover {
+    background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .products__modal-slider-button--button-next:hover {
+    background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .products__modal-close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/catalog/card/close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+  }
+  .products__modal-close-button:hover {
+    background-image: url("/assets/img/catalog/card/close_hover.png");
+  }
+
+  .calculator {
+    font-family: "Gotham Pro";
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .calculator__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 300px;
+  }
+  .calculator__input-wrapper {
+    display: grid;
+    grid-template-columns: 150px 130px;
+    grid-template-rows: auto;
+    height: 90px;
+    justify-self: center;
+  }
+  .calculator__label {
+    grid-column: 1/span 2;
+    justify-self: center;
+  }
+  .calculator__input {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+  }
+  .calculator__input:focus {
+    background-color: #fff;
+    border: 1px solid #333333;
+  }
+  .calculator__input-description {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    padding-left: 20px;
+  }
+  .calculator__img {
+    width: 100%;
+    height: 108px;
+    background-image: url("/assets/img/catalog/calculator/flask.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  .calculator .decided {
+    background-image: url("/assets/img/catalog/calculator/flask_red.png");
+  }
+  .calculator__help {
+    text-align: center;
+  }
+  .calculator__help span {
+    color: #cc3333;
+  }
+}
+
 /*# sourceMappingURL=catalog-style.css.map */
