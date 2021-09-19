@@ -1005,7 +1005,7 @@ and (max-device-width : 767px) {
         url('/../../assets/img/catalog/grape-leaves.png');
         background-repeat: no-repeat;
         background-position: 
-        left 10% top -9%;
+        left -50px top -200px;
 
         &__title {
             text-align: center;
@@ -1015,11 +1015,12 @@ and (max-device-width : 767px) {
             margin-left: 30px;
         }
         
-        .catalog__container {
+        &__container {
             grid-template-columns: 300px ;
             grid-template-rows: 100px auto auto;
             column-gap: 50px;
             row-gap: 20px;
+            padding-top: 40px;
             padding-bottom: 30px;
         }
 

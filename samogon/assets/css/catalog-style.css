@@ -802,7 +802,7 @@
     background: none;
     background-image: url("/../../assets/img/catalog/grape-leaves.png");
     background-repeat: no-repeat;
-    background-position: left 10% top -9%;
+    background-position: left -50px top -200px;
   }
   .catalog__title {
     text-align: center;
@@ -810,11 +810,12 @@
   .catalog__title:after {
     margin-left: 30px;
   }
-  .catalog .catalog__container {
+  .catalog__container {
     grid-template-columns: 300px;
     grid-template-rows: 100px auto auto;
     column-gap: 50px;
     row-gap: 20px;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
   .catalog__breadcrumbs {
