@@ -597,7 +597,7 @@
     left: 100px;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/buttons/menu.svg");
+    background-image: url("/samogon/assets/img/catalog/buttons/menu.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -607,7 +607,7 @@
     left: 100px;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/buttons/close.svg");
+    background-image: url("/samogon/assets/img/catalog/buttons/close.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -701,22 +701,22 @@
     cursor: pointer;
   }
   .products__modal-slider-button--button-prev {
-    background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+    background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
     top: 45%;
     left: -20%;
   }
   .products__modal-slider-button--button-next {
-    background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+    background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
     top: 45%;
     right: -20%;
   }
   .products__modal-slider-button--button-prev:hover {
-    background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+    background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
     background-repeat: no-repeat;
     background-position: center;
   }
   .products__modal-slider-button--button-next:hover {
-    background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+    background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -726,13 +726,13 @@
     right: 5%;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/card/close.png");
+    background-image: url("/samogon/assets/img/catalog/card/close.png");
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
   }
   .products__modal-close-button:hover {
-    background-image: url("/assets/img/catalog/card/close_hover.png");
+    background-image: url("/samogon/assets/img/catalog/card/close_hover.png");
   }
 
   .calculator {
@@ -781,13 +781,13 @@
   .calculator__img {
     width: 100%;
     height: 108px;
-    background-image: url("/assets/img/catalog/calculator/flask.png");
+    background-image: url("/samogon/assets/img/catalog/calculator/flask.png");
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
   }
   .calculator .decided {
-    background-image: url("/assets/img/catalog/calculator/flask_red.png");
+    background-image: url("/samogon/assets/img/catalog/calculator/flask_red.png");
   }
   .calculator__help {
     text-align: center;
@@ -800,7 +800,7 @@
   .catalog {
     padding-top: 30px;
     background: none;
-    background-image: url("/../../assets/img/catalog/grape-leaves.png");
+    background-image: url("/samogon/assets/img/catalog/grape-leaves.png");
     background-repeat: no-repeat;
     background-position: left -50px top -200px;
   }
@@ -903,7 +903,7 @@
     top: -35px;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/buttons/menu.svg");
+    background-image: url("/samogon/assets/img/catalog/buttons/menu.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -914,7 +914,7 @@
     top: -35px;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/buttons/close.svg");
+    background-image: url("/samogon/assets/img/catalog/buttons/close.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1036,22 +1036,22 @@
     cursor: pointer;
   }
   .products__modal-slider-button--button-prev {
-    background: url("/assets/img/arrows/left_slider_button.png") no-repeat center;
+    background: url("/samogon/assets/img/arrows/left_slider_button.png") no-repeat center;
     top: 45%;
     left: -20%;
   }
   .products__modal-slider-button--button-next {
-    background: url("/assets/img/arrows/right_slider_button.png") no-repeat center;
+    background: url("/samogon/assets/img/arrows/right_slider_button.png") no-repeat center;
     top: 45%;
     right: -20%;
   }
   .products__modal-slider-button--button-prev:hover {
-    background-image: url("/assets/img/arrows/left_slider_button_hover.png");
+    background-image: url("/samogon/assets/img/arrows/left_slider_button_hover.png");
     background-repeat: no-repeat;
     background-position: center;
   }
   .products__modal-slider-button--button-next:hover {
-    background-image: url("/assets/img/arrows/right_slider_button_hover.png");
+    background-image: url("/samogon/assets/img/arrows/right_slider_button_hover.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1061,13 +1061,13 @@
     right: 5%;
     width: 30px;
     height: 30px;
-    background-image: url("/assets/img/catalog/card/close.png");
+    background-image: url("/samogon/assets/img/catalog/card/close.png");
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
   }
   .products__modal-close-button:hover {
-    background-image: url("/assets/img/catalog/card/close_hover.png");
+    background-image: url("/samogon/assets/img/catalog/card/close_hover.png");
   }
 
   .calculator {
@@ -1112,13 +1112,13 @@
   .calculator__img {
     width: 100%;
     height: 108px;
-    background-image: url("/assets/img/catalog/calculator/flask.png");
+    background-image: url("/samogon/assets/img/catalog/calculator/flask.png");
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
   }
   .calculator .decided {
-    background-image: url("/assets/img/catalog/calculator/flask_red.png");
+    background-image: url("/samogon/assets/img/catalog/calculator/flask_red.png");
   }
   .calculator__help {
     text-align: center;
