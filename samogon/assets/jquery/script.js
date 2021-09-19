@@ -39,13 +39,39 @@ jQuery(document).ready( function () {
 
 // ! MAIN PAGE PRODUCTS SLIDERS
 
-const swiper = new Swiper('.popular-products__slider', {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    simulateTouch: false,
-    loop: true,
-    nextButton: '.popular-products__slider-button--button-next',
-    prevButton: '.popular-products__slider-button--button-prev',
+jQuery(document).ready(function(){
+
+    const popularProducts = new Swiper('.popular-products__slider', {
+
+        loop: true,
+        navigation: {
+            nextEl: '.popular-products__slider-button--button-next',
+            prevEl: '.popular-products__slider-button--button-prev',
+          },
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+                simulateTouch: true,
+                },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+                simulateTouch: true,
+            },
+
+            1100: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                simulateTouch: false,
+            },
+            
+        },
+
+    });
 
 });
 
@@ -54,8 +80,32 @@ const swiper2 = new Swiper('.discount-products__slider', {
     spaceBetween: 25,
     simulateTouch: false,
     loop: true,
-    nextButton: '.discount-products__slider-button--button-next',
-    prevButton: '.discount-products__slider-button--button-prev',
+    navigation: {
+        nextEl: '.discount-products__slider-button--button-next',
+        prevEl: '.discount-products__slider-button--button-prev',
+      },
+
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            simulateTouch: true,
+            },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+            simulateTouch: true,
+        },
+
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            simulateTouch: false,
+        },
+        
+    },
 
 });
 
@@ -63,12 +113,8 @@ const swiper2 = new Swiper('.discount-products__slider', {
 
 jQuery(document).ready(function(){
     const catalogSlider = new Swiper('.products__slider', {
-        spaceBetween: 25,
-        simulateTouch: false,
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        slidesPerColumnFill: 'row',
         speed: 0,
+        slidesPerColumnFill: 'row',
 
         grid: {
             rows: 4, 
@@ -82,9 +128,67 @@ jQuery(document).ready(function(){
               return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
         },
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+                simulateTouch: true,
+                },
+
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 25,
+                simulateTouch: true,
+            },
+
+            1100: {
+                spaceBetween: 25,
+                simulateTouch: false,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                
+            },
+            
+        },
         
     });
 });
+
+// ! CATALOG PHONE NAV
+
+jQuery(document).ready(function(){
+
+    let catalogModalNav = jQuery('.navigation').find('.navigation__list');
+    let openButton = jQuery('.navigation').find('.navigation-modal__open-button');
+    let closeButton = jQuery('.navigation').find('.navigation-modal__close-button');
+    let breadcrumbs = jQuery('.catalog').find('.catalog__breadcrumbs');
+    jQuery(closeButton).hide();
+    
+    jQuery('.navigation').on( "click" , '.navigation-modal__open-button' , function(event) {
+
+    event.preventDefault();
+    jQuery(openButton).hide(200);
+    jQuery(breadcrumbs).hide();
+    catalogModalNav.show(100);
+    jQuery(closeButton).show(200);
+    
+    
+    });  
+
+    jQuery('.navigation').on( "click" , '.navigation-modal__close-button' , function(event) {
+
+        event.preventDefault();
+        jQuery(closeButton).hide(200);
+        catalogModalNav.hide(100);
+        jQuery(openButton).show(200);
+        jQuery(breadcrumbs).show();
+
+    }); 
+
+}); 
 
 // ! CATALOG CARD SLIDER
 
@@ -103,7 +207,6 @@ var thumbnailSlider = new Swiper(".card__thumbnails-slide", {
 
 // ! CATALOG RECENTLY-VIEWED SLIDER
 
-
 jQuery(document).ready(function(){
     const recentlyView = new Swiper('.recently-viewed__slider', {
         slidesPerView: 3,
@@ -114,7 +217,33 @@ jQuery(document).ready(function(){
         navigation: {
             nextEl: '.recently-viewed__slider-button--button-next',
             prevEl: '.recently-viewed__slider-button--button-prev',
-          }
+          },
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+                simulateTouch: true,
+                },
+
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 25,
+                simulateTouch: true,
+            },
+
+            1100: {
+                spaceBetween: 25,
+                simulateTouch: false,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                
+            },
+            
+        },
+
     });
 });
 
@@ -132,11 +261,11 @@ jQuery(document).ready(function(){
 });
 
 let opacityWrapper = document.querySelector('.opacity-wrapper');
-let modal = jQuery('.products').find('.products__modal');
+let modal2 = jQuery('.products').find('.products__modal');
 
 jQuery('.card__main-img').on( "click" , '.swiper-slide-active' , function(event) {
   event.preventDefault();
-  modal.removeClass('visually-hidden');
+  modal2.removeClass('visually-hidden');
   jQuery(opacityWrapper).toggleClass('visually-hidden');
   jQuery(opacityWrapper).toggleClass('opacity-wrapper--open');
 });  
@@ -145,7 +274,7 @@ jQuery(document).on( "click" , '.products__modal-close-button' , function(event)
     event.preventDefault();
     let target = event.target.closest('button');
     if (!target) return;
-    modal.addClass('visually-hidden');
+    modal2.addClass('visually-hidden');
     jQuery(opacityWrapper).addClass('visually-hidden');
     jQuery(opacityWrapper).removeClass('opacity-wrapper--open');
 
